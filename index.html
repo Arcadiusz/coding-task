@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Currency Rate Calculator</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1>Currency Rate Calculator</h1>
+    <main class="container">
+      <p class="exchange-rates"></p>
+      <form id="currency-exchange-form">
+        <div class="input-field">
+          <label class="input-field__label" for="amount">Amount:</label>
+          <input value="1" type="number" id="amount" step="0.01" />
+        </div>
+        <div class="currencies">
+          <div class="input-field">
+            <label class="input-field__label" for="from">From:</label>
+            <select id="from"></select>
+          </div>
+          <span class="icon">&#8644;</span>
+          <div class="input-field">
+            <label class="input-field__label" for="to">To:</label>
+            <select id="to"></select>
+          </div>
+        </div>
+        <button class="btn btn--submit">convert</button>
+        <p class="error-msg"></p>
+        <p class="conversion-result"></p>
+      </form>
+    </main>
+  </body>
+</html>
